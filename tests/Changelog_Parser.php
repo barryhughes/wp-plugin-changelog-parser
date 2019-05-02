@@ -63,7 +63,7 @@ class Changelog_Parser extends Test_Case {
 	/**
 	 * @test
 	 */
-	public function date_is_empty_string_is_not_provided() {
+	public function date_is_empty_string_if_not_provided() {
 		$version_block = $this->changelog['2.4.5'];
 		$this->assertObjectHasAttribute( 'date', $version_block );
 		$this->assertEquals( '', $version_block->date );
