@@ -3,6 +3,8 @@
 A very simple tool that can parses a WordPress plugin readme.txt file and returns the changelog data. All you need to 
 do, in theory, is pass the path to the readme file.
 
+[![Build Status](https://travis-ci.com/barryhughes/wp-plugin-changelog-parser.svg?branch=master)](https://travis-ci.com/barryhughes/wp-plugin-changelog-parser)
+
 ```php
 use Harry_Bewes\WordPress\Changelog_Parser;
 
