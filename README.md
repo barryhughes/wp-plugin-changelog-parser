@@ -17,13 +17,13 @@ object with properties `date` and `entries` (which is an array of individual cha
 ```
 [
     # An associative array where each key is the version number and
-    # each value is a plain old object
+    # each value is a stdClass object
     '2.0' => {
         # The date property will always be set and will always be a string,
         # but may be empty
         'date'    => '2019-07-01',
         
-        # The enrties property will always be set and will always be an array,
+        # The entries property will always be set and will always be an array,
         # but may be empty
         'entries' => [
             'Added support for foo',
