@@ -1,0 +1,21 @@
+{
+    "name": "harrybewes/wp-changelog-parser",
+    "description": "Utility for parsing the changelog section of a typical WordPress plugin readme file.",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "barryhughes",
+            "email": "barry@codingkills.me"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Harry_Bewes\\WordPress\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    }
+}
