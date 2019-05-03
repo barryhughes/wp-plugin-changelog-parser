@@ -1,6 +1,6 @@
 # WordPress Plugin Changelog Parser [![Build Status](https://travis-ci.com/barryhughes/wp-plugin-changelog-parser.svg?branch=master)](https://travis-ci.com/barryhughes/wp-plugin-changelog-parser)
 
-A very simple tool that can parses a WordPress plugin readme.txt file and returns the changelog data. All you need to 
+A very simple tool that can parse a WordPress plugin readme.txt file and return the changelog data. All you need to 
 do, in theory, is pass the path to the readme file.
 
 ```php
@@ -11,8 +11,7 @@ require 'vendor/autoload.php';
 $changelog = ( new Changelog_Parser( '/path/to/plugin/readme.txt' ) )->get_changelog(); 
 ```
 
-In return, you will receive an array-representation of the changelog. Each key is the version number and the value is an
-object with properties `date` and `entries` (which is an array of individual changelog entries).
+In return, you will receive an array-representation of the changelog. If the filepath is invalid, on the other hand, you'll receive an exception for your troubles—which you can catch and do stuff with. Assuming success, though, each key of the array is the version number and the value is an object containing properties `date` and `entries` (which will be an array of individual changelog entries).
 
 ```
 [
